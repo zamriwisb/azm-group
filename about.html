@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — AZM Group</title>
+  <meta name="description" content="Learn about AZM Group — a one-stop construction and industrial business centre committed to excellence in building, infrastructure, and industrial services.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'azm-red': '#FF0000',
+            'azm-red-dark': '#CC0000',
+            'azm-red-light': '#FF3333',
+            'azm-dark': '#0A2540',
+            'azm-steel': '#238FEB',
+            'azm-gold': '#EAAD00',
+            'azm-yellow': '#EAAD00',
+            'azm-yellow-dark': '#C99600',
+            'azm-yellow-light': '#FFCC33',
+            'azm-blue': '#238FEB',
+            'azm-blue-dark': '#1A73C8',
+            'azm-navy': '#0A2540',
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-body text-gray-800 antialiased">
+
+  <!-- NAVIGATION BAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 navbar-scrolled">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="./" class="flex-shrink-0 flex items-center">
+          <img src="assets/logos/azm-group.png" alt="AZM Group" class="h-10 md:h-12 w-auto object-contain">
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="about" class="nav-link text-sm font-medium uppercase tracking-wide text-gray-600 hover:text-azm-dark transition-colors duration-200">About</a>
+          <a href="./#services" class="nav-link text-sm font-medium uppercase tracking-wide text-gray-600 hover:text-azm-dark transition-colors duration-200">Services</a>
+          <a href="projects" class="nav-link text-sm font-medium uppercase tracking-wide text-gray-600 hover:text-azm-dark transition-colors duration-200">Projects</a>
+          <a href="news" class="nav-link text-sm font-medium uppercase tracking-wide text-gray-600 hover:text-azm-dark transition-colors duration-200">News</a>
+          <a href="contact" class="inline-block bg-azm-red hover:bg-azm-red-dark text-white text-sm font-semibold uppercase tracking-wide px-6 py-2.5 rounded transition-colors duration-200">Contact Us</a>
+        </div>
+        <button id="menu-toggle" class="md:hidden relative w-10 h-10 flex items-center justify-center text-azm-dark focus:outline-none" aria-label="Toggle menu">
+          <svg id="menu-icon-open" class="w-6 h-6 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="menu-icon-close" class="w-6 h-6 absolute opacity-0 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+      <div class="px-4 pb-6 pt-2 space-y-3 bg-white border-t border-gray-100">
+        <a href="about" class="mobile-link block text-gray-600 hover:text-azm-dark text-sm font-medium uppercase tracking-wide py-2 border-b border-gray-100">About</a>
+        <a href="./#services" class="mobile-link block text-gray-600 hover:text-azm-dark text-sm font-medium uppercase tracking-wide py-2 border-b border-gray-100">Services</a>
+        <a href="projects" class="mobile-link block text-gray-600 hover:text-azm-dark text-sm font-medium uppercase tracking-wide py-2 border-b border-gray-100">Projects</a>
+        <a href="news" class="mobile-link block text-gray-600 hover:text-azm-dark text-sm font-medium uppercase tracking-wide py-2 border-b border-gray-100">News</a>
+        <a href="contact" class="inline-block mt-2 bg-azm-red hover:bg-azm-red-dark text-white text-sm font-semibold uppercase tracking-wide px-6 py-2.5 rounded transition-colors duration-200">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO BANNER -->
+  <section class="relative pt-20 min-h-[420px] md:min-h-[480px] flex items-center justify-center bg-azm-dark bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80')">
+    <div class="absolute inset-0 bg-gradient-to-b from-azm-dark/70 via-azm-dark/80 to-azm-dark/95"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center py-16">
+      <nav class="flex items-center justify-center gap-2 text-xs text-white/60 mb-6 fade-up">
+        <a href="./" class="hover:text-white transition">Home</a>
+        <span>/</span>
+        <span class="text-white">About Us</span>
+      </nav>
+      <h1 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-white leading-tight mb-4 fade-up delay-1">
+        About AZM Group
+      </h1>
+      <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto fade-up delay-2">
+        One-Stop Construction &amp; Industrial Business Centre
+      </p>
+    </div>
+  </section>
+
+  <!-- MISSION / VISION / VALUES -->
+  <section class="relative py-20 lg:py-28 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+
+      <!-- Header -->
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <div class="flex items-center justify-center gap-3 mb-4 reveal">
+          <span class="block w-8 h-0.5 bg-azm-red"></span>
+          <span class="text-azm-red text-xs font-semibold uppercase tracking-[0.2em]">What Drives Us</span>
+          <span class="block w-8 h-0.5 bg-azm-red"></span>
+        </div>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-azm-dark leading-tight mb-6 reveal reveal-d1">
+          What Drives AZM Group
+        </h2>
+        <p class="text-gray-500 text-sm leading-relaxed reveal reveal-d2">
+          A one-stop construction and industrial business centre built on strong foundations of purpose, vision, and values.
+        </p>
+      </div>
+
+      <!-- Three Columns: Mission / Vision / Values -->
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Mission -->
+        <div class="relative bg-azm-dark rounded-2xl p-8 lg:p-10 text-center reveal reveal-scale reveal-d1">
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-azm-red flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-white text-lg uppercase tracking-wide mt-4 mb-4">Our Mission</h3>
+          <div class="w-10 h-0.5 bg-azm-red mx-auto mb-4"></div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            To deliver integrated construction and industrial solutions with the highest standards of quality, safety, and professionalism — ensuring every project exceeds expectations.
+          </p>
+        </div>
+
+        <!-- Vision (elevated) -->
+        <div class="relative bg-azm-dark rounded-2xl p-8 lg:p-10 text-center md:-translate-y-4 reveal reveal-scale reveal-d2">
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-azm-yellow flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-white text-lg uppercase tracking-wide mt-4 mb-4">Our Vision</h3>
+          <div class="w-10 h-0.5 bg-azm-gold mx-auto mb-4"></div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            To be the most trusted one-stop construction and industrial business centre in the region — known for reliability, innovation, and building lasting value.
+          </p>
+        </div>
+
+        <!-- Values -->
+        <div class="relative bg-azm-dark rounded-2xl p-8 lg:p-10 text-center reveal reveal-scale reveal-d3">
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-azm-blue flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-white text-lg uppercase tracking-wide mt-4 mb-4">Our Values</h3>
+          <div class="w-10 h-0.5 bg-azm-blue mx-auto mb-4"></div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Quality, integrity, teamwork, and efficiency. These aren't just words — they're the principles that guide every decision and every project we undertake.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANY OVERVIEW -->
+  <section class="py-16 lg:py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <div class="flex items-center justify-center gap-3 mb-4 reveal">
+          <span class="block w-8 h-0.5 bg-azm-yellow"></span>
+          <span class="text-azm-yellow-dark text-xs font-semibold uppercase tracking-[0.2em]">Our Story</span>
+          <span class="block w-8 h-0.5 bg-azm-yellow"></span>
+        </div>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-3xl text-azm-dark leading-tight mb-6 reveal reveal-d1">
+          Who We Are
+        </h2>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl p-8 lg:p-12 border border-gray-100 shadow-sm">
+          <div class="flex justify-center mb-8 reveal">
+            <img src="assets/logos/azm-group.png" alt="AZM Group" class="h-16 md:h-20 w-auto object-contain">
+          </div>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4 reveal reveal-d1">
+            AZM Group is a one-stop construction and industrial business centre headquartered in Kelantan, Malaysia. What started as a focused venture in scaffolding supply and construction services has grown into a diversified group of companies operating across multiple sectors of the construction and industrial industry.
+          </p>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4 reveal reveal-d2">
+            With its core operating company, AZM Global Solution Sdn Bhd, established on 26 February 2018, the group has steadily expanded its capabilities — earning MOF registration and CIDB Grade G4 certification along the way. Today, the group encompasses subsidiaries specializing in construction management, training &amp; consultancy, concrete manufacturing, and even sports development.
+          </p>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4 reveal reveal-d3">
+            Through its diversified divisions and subsidiaries, AZM Group delivers integrated solutions with a focus on quality, reliability, and efficiency. From scaffolding and heavy machinery to safety equipment, OSH training, road signage, pest control, and concrete products — the group serves clients across government, corporate, and private sectors.
+          </p>
+          <p class="text-gray-500 text-sm leading-relaxed reveal reveal-d4">
+            Guided by a commitment to excellence and driven by strong values, AZM Group continues to grow — building value, delivering trust, and empowering growth across every project and partnership.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OUR SUBSIDIARIES -->
+  <section class="py-20 lg:py-28 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+
+      <!-- Header -->
+      <div class="max-w-3xl mx-auto text-center mb-14">
+        <div class="flex items-center justify-center gap-3 mb-4 reveal">
+          <span class="block w-8 h-0.5 bg-azm-blue"></span>
+          <span class="text-azm-blue-dark text-xs font-semibold uppercase tracking-[0.2em]">Our Companies</span>
+          <span class="block w-8 h-0.5 bg-azm-blue"></span>
+        </div>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-azm-dark leading-tight mb-6 reveal reveal-d1">
+          Our Subsidiaries
+        </h2>
+        <p class="text-gray-500 text-sm leading-relaxed reveal reveal-d2">A group of specialized companies operating as one unified ecosystem.</p>
+      </div>
+
+      <!-- 5 Subsidiary Cards -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+
+        <!-- AZM Global Solution -->
+        <a href="subsidiaries/global-solution" class="group bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-azm-red/30 hover:shadow-md transition-all duration-300 flex flex-col reveal reveal-d1">
+          <div class="h-28 flex items-center justify-center mb-3">
+            <img src="assets/logos/azm-global.png" alt="AZM Global Solution" class="max-h-full max-w-[180px] object-contain">
+          </div>
+          <h3 class="font-heading font-bold text-azm-dark text-sm mb-1">AZM Global Solution</h3>
+          <p class="text-gray-400 text-[10px] uppercase tracking-wider mb-2">Sdn Bhd</p>
+          <p class="text-gray-500 text-xs leading-relaxed mb-5 flex-1">Scaffolding, Machinery, Safety, Signage &amp; Pest Control</p>
+          <span class="mt-auto inline-flex items-center justify-center gap-1.5 text-azm-red text-xs font-semibold uppercase tracking-wider pt-4 border-t border-gray-100 group-hover:text-azm-red-dark transition-colors">
+            Learn More
+            <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+
+        <!-- AZM Training & Consultancy -->
+        <a href="subsidiaries/training" class="group bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-azm-yellow/50 hover:shadow-md transition-all duration-300 flex flex-col reveal reveal-d2">
+          <div class="h-28 flex items-center justify-center mb-3">
+            <img src="assets/logos/azm-training.png" alt="AZM Training &amp; Consultancy" class="max-h-full max-w-[180px] object-contain">
+          </div>
+          <h3 class="font-heading font-bold text-azm-dark text-sm mb-1">AZM Training &amp; Consultancy</h3>
+          <p class="text-gray-400 text-[10px] uppercase tracking-wider mb-2">Sdn Bhd</p>
+          <p class="text-gray-500 text-xs leading-relaxed mb-5 flex-1">OSH Training &amp; Industry Consultancy</p>
+          <span class="mt-auto inline-flex items-center justify-center gap-1.5 text-azm-yellow-dark text-xs font-semibold uppercase tracking-wider pt-4 border-t border-gray-100 group-hover:text-azm-red transition-colors">
+            Learn More
+            <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+
+        <!-- AZM Bina Gemilang -->
+        <a href="subsidiaries/bina-gemilang" class="group bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-azm-blue/40 hover:shadow-md transition-all duration-300 flex flex-col reveal reveal-d3">
+          <div class="h-28 flex items-center justify-center mb-3">
+            <img src="assets/logos/azm-bina-gemilang.png" alt="AZM Bina Gemilang" class="max-h-full max-w-[180px] object-contain">
+          </div>
+          <h3 class="font-heading font-bold text-azm-dark text-sm mb-1">AZM Bina Gemilang</h3>
+          <p class="text-gray-400 text-[10px] uppercase tracking-wider mb-2">Sdn Bhd</p>
+          <p class="text-gray-500 text-xs leading-relaxed mb-5 flex-1">Construction Management &amp; Residential Builds</p>
+          <span class="mt-auto inline-flex items-center justify-center gap-1.5 text-azm-blue-dark text-xs font-semibold uppercase tracking-wider pt-4 border-t border-gray-100 group-hover:text-azm-red transition-colors">
+            Learn More
+            <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+
+        <!-- AZM Concrete Industries -->
+        <a href="subsidiaries/concrete" class="group bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-azm-yellow/50 hover:shadow-md transition-all duration-300 flex flex-col reveal reveal-d4">
+          <div class="h-28 flex items-center justify-center mb-3">
+            <img src="assets/logos/azm-concrete-industries.png" alt="AZM Concrete Industries" class="max-h-full max-w-[180px] object-contain">
+          </div>
+          <h3 class="font-heading font-bold text-azm-dark text-sm mb-1">AZM Concrete Industries</h3>
+          <p class="text-gray-400 text-[10px] uppercase tracking-wider mb-2">Sdn Bhd</p>
+          <p class="text-gray-500 text-xs leading-relaxed mb-5 flex-1">Concrete Products Manufacturing &amp; Supply</p>
+          <span class="mt-auto inline-flex items-center justify-center gap-1.5 text-azm-yellow-dark text-xs font-semibold uppercase tracking-wider pt-4 border-t border-gray-100 group-hover:text-azm-red transition-colors">
+            Learn More
+            <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+
+        <!-- AZM Rovers FC -->
+        <a href="subsidiaries/rovers" class="group bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-azm-red/30 hover:shadow-md transition-all duration-300 flex flex-col reveal reveal-d5">
+          <div class="h-28 flex items-center justify-center mb-3">
+            <img src="assets/logos/azm-rovers.png" alt="AZM Rovers FC" class="max-h-full max-w-[180px] object-contain">
+          </div>
+          <h3 class="font-heading font-bold text-azm-dark text-sm mb-1">AZM Rovers FC</h3>
+          <p class="text-gray-400 text-[10px] uppercase tracking-wider mb-2">Football Club</p>
+          <p class="text-gray-500 text-xs leading-relaxed mb-5 flex-1">Football Club &amp; Sports Development</p>
+          <span class="mt-auto inline-flex items-center justify-center gap-1.5 text-azm-red text-xs font-semibold uppercase tracking-wider pt-4 border-t border-gray-100 group-hover:text-azm-red-dark transition-colors">
+            Learn More
+            <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="font-heading font-extrabold text-2xl sm:text-3xl text-azm-dark leading-tight mb-4 reveal">
+        Partner with Us
+      </h2>
+      <p class="text-gray-500 text-sm leading-relaxed mb-8 reveal reveal-d1">
+        Ready to work with a team that values quality, safety, and results? Let's build something great together.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 reveal reveal-d2">
+        <a href="contact" class="inline-block bg-azm-red hover:bg-azm-red-dark text-white font-semibold text-sm uppercase tracking-wide px-8 py-3.5 rounded transition-colors duration-200">Get In Touch</a>
+        <a href="https://wa.me/60193852239" target="_blank" class="inline-flex items-center gap-2 border-2 border-azm-dark/20 hover:border-azm-dark text-azm-dark font-semibold text-sm uppercase tracking-wide px-8 py-3.5 rounded transition-colors duration-200 hover:bg-azm-dark/5">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-azm-dark pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-10 pb-8 border-b border-white/10">
+        <div>
+          <img src="assets/logos/azm-group.png" alt="AZM Group" class="h-12 w-auto object-contain mb-2">
+          <p class="text-gray-500 text-xs">One-Stop Construction &amp; Industrial Business Centre</p>
+        </div>
+        <a href="https://wa.me/60193852239" class="inline-flex items-center gap-2 px-5 py-2.5 bg-azm-red hover:bg-azm-red-dark text-white text-xs font-semibold rounded-lg transition">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          Contact Us
+        </a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="about" class="text-gray-400 text-xs hover:text-azm-red transition">About Us</a></li>
+            <li><a href="./#subsidiaries" class="text-gray-400 text-xs hover:text-azm-red transition">Subsidiaries</a></li>
+            <li><a href="./#services" class="text-gray-400 text-xs hover:text-azm-red transition">Services</a></li>
+            <li><a href="./#clients" class="text-gray-400 text-xs hover:text-azm-red transition">Clients</a></li>
+            <li><a href="contact" class="text-gray-400 text-xs hover:text-azm-red transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">Companies</h4>
+          <ul class="space-y-2">
+            <li><a href="subsidiaries/global-solution" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Global Solution</a></li>
+            <li><a href="subsidiaries/training" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Training &amp; Consultancy</a></li>
+            <li><a href="subsidiaries/bina-gemilang" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Bina Gemilang</a></li>
+            <li><a href="subsidiaries/concrete" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Concrete Industries</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">Divisions</h4>
+          <ul class="space-y-2">
+            <li><a href="services/scaffolding" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Scaffolding &amp; Machinery</a></li>
+            <li><a href="services/safety" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Safetyware</a></li>
+            <li><a href="services/safety" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Signboard &amp; Fabrication</a></li>
+            <li><a href="#" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Procare &amp; Pest Control</a></li>
+            <li><a href="subsidiaries/rovers" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Rovers FC</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">WhatsApp</h4>
+          <ul class="space-y-2 text-xs">
+            <li class="text-gray-500">Scaffolding: <span class="text-gray-400">019-385 2239</span></li>
+            <li class="text-gray-500">Project: <span class="text-gray-400">017-995 2239</span></li>
+            <li class="text-gray-500">Machinery: <span class="text-gray-400">012-419 2239</span></li>
+            <li class="text-gray-500">Safety: <span class="text-gray-400">013-276 2239</span></li>
+            <li class="text-gray-500">Training: <span class="text-gray-400">019-574 2239</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">Head Office</h4>
+          <ul class="space-y-2 text-gray-400 text-xs">
+            <li>Kelantan, Malaysia</li>
+            <li>info@azmgroup.com.my</li>
+            <li>Mon – Fri: 9AM – 6PM</li>
+          </ul>
+          <div class="flex gap-2 mt-4">
+            <a href="https://www.facebook.com/azmscaffolding" target="_blank" class="w-7 h-7 rounded bg-white/10 flex items-center justify-center hover:bg-azm-red/30 transition"><svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/" target="_blank" class="w-7 h-7 rounded bg-white/10 flex items-center justify-center hover:bg-azm-red/30 transition"><svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p class="text-gray-500 text-xs">&copy; 2026 AZM Group. All rights reserved.</p>
+        <p class="text-gray-500 text-xs italic">"Building Value. Delivering Trust. Empowering Growth."</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/60123456789" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#1ebe57] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110" aria-label="Chat on WhatsApp">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

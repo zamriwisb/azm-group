@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training & Consultancy — AZM Group</title>
+  <meta name="description" content="AZM Group provides professional OSH training, compliance programs, and industry consultancy services for teams and enterprises across Malaysia.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'azm-red': '#FF0000',
+            'azm-red-dark': '#CC0000',
+            'azm-red-light': '#FF3333',
+            'azm-dark': '#0A2540',
+            'azm-steel': '#238FEB',
+            'azm-gold': '#EAAD00',
+            'azm-yellow': '#EAAD00',
+            'azm-yellow-dark': '#C99600',
+            'azm-yellow-light': '#FFCC33',
+            'azm-blue': '#238FEB',
+            'azm-blue-dark': '#1A73C8',
+            'azm-navy': '#0A2540',
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="font-body text-gray-800 antialiased">
+
+  <!-- ============================================
+       NAVIGATION BAR (solid background)
+       ============================================ -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 navbar-scrolled">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="../" class="flex-shrink-0 flex items-center">
+          <img src="../assets/logos/azm-group.png" alt="AZM Group" class="h-10 md:h-12 w-auto object-contain">
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="../about" class="nav-link text-sm font-medium uppercase tracking-wide text-gray-600 hover:text-azm-dark transition-colors duration-200">About</a>
+          <a href="../#services" class="nav-link text-sm font-medium uppercase tracking-wide text-gray-600 hover:text-azm-dark transition-colors duration-200">Services</a>
+          <a href="../projects" class="nav-link text-sm font-medium uppercase tracking-wide text-gray-600 hover:text-azm-dark transition-colors duration-200">Projects</a>
+          <a href="../news" class="nav-link text-sm font-medium uppercase tracking-wide text-gray-600 hover:text-azm-dark transition-colors duration-200">News</a>
+          <a href="../contact" class="inline-block bg-azm-red hover:bg-azm-red-dark text-white text-sm font-semibold uppercase tracking-wide px-6 py-2.5 rounded transition-colors duration-200">
+            Contact Us
+          </a>
+        </div>
+        <button id="menu-toggle" class="md:hidden relative w-10 h-10 flex items-center justify-center text-azm-dark focus:outline-none" aria-label="Toggle menu">
+          <svg id="menu-icon-open" class="w-6 h-6 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 absolute opacity-0 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+      <div class="px-4 pb-6 pt-2 space-y-3 bg-white border-t border-gray-100">
+        <a href="../about" class="mobile-link block text-gray-600 hover:text-azm-dark text-sm font-medium uppercase tracking-wide py-2 border-b border-gray-100">About</a>
+        <a href="../#services" class="mobile-link block text-gray-600 hover:text-azm-dark text-sm font-medium uppercase tracking-wide py-2 border-b border-gray-100">Services</a>
+        <a href="../projects" class="mobile-link block text-gray-600 hover:text-azm-dark text-sm font-medium uppercase tracking-wide py-2 border-b border-gray-100">Projects</a>
+        <a href="../news" class="mobile-link block text-gray-600 hover:text-azm-dark text-sm font-medium uppercase tracking-wide py-2 border-b border-gray-100">News</a>
+        <a href="../contact" class="inline-block mt-2 bg-azm-red hover:bg-azm-red-dark text-white text-sm font-semibold uppercase tracking-wide px-6 py-2.5 rounded transition-colors duration-200">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO BANNER
+       ============================================ -->
+  <section class="relative pt-20 min-h-[420px] md:min-h-[480px] flex items-center justify-center bg-azm-dark bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80')">
+    <div class="absolute inset-0 bg-gradient-to-b from-azm-dark/70 via-azm-dark/80 to-azm-dark/95"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center py-16">
+      <nav class="flex items-center justify-center gap-2 text-xs text-white/60 mb-6 fade-up">
+        <a href="../" class="hover:text-white transition">Home</a>
+        <span>/</span>
+        <a href="../#services" class="hover:text-white transition">Services</a>
+        <span>/</span>
+        <span class="text-white">Training &amp; Consultancy</span>
+      </nav>
+      <h1 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-white leading-tight mb-4 fade-up delay-1">
+        Training &amp; Consultancy
+      </h1>
+      <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto fade-up delay-2">
+        Professional OSH training and industry consultancy to empower your workforce.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICE DETAILS
+       ============================================ -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <div class="flex items-center justify-center gap-3 mb-4 reveal">
+          <span class="block w-8 h-0.5 bg-azm-blue"></span>
+          <span class="text-azm-blue text-xs font-semibold uppercase tracking-[0.2em]">What We Do</span>
+          <span class="block w-8 h-0.5 bg-azm-blue"></span>
+        </div>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-3xl text-azm-dark leading-tight mb-6 reveal reveal-d1">
+          Empowering Teams Through Knowledge
+        </h2>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4 reveal reveal-d2">
+          AZM Training &amp; Consultancy Sdn Bhd is a subsidiary under AZM Global Solution Sdn Bhd, focusing on Occupational Safety and Health (OSH) training and industry consultancy services. Training activities were initially conducted under AZM Global Solution Sdn Bhd since 2018 through its training division.
+        </p>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4 reveal reveal-d2">
+          Due to growing commitment and demand as a training provider, AZM Training &amp; Consultancy Sdn Bhd was officially incorporated on 21 June 2019. The company specializes in delivering OSH training programs, including both public and in-house sessions, as well as providing consultancy services for various industries.
+        </p>
+        <p class="text-gray-500 text-sm leading-relaxed reveal reveal-d3">
+          AZM Training &amp; Consultancy complements the role of AZM Global Solution Sdn Bhd, which continues to focus on the supply of safety equipment and Personal Protective Equipment (PPE). Together, they provide a comprehensive safety ecosystem — from training and awareness to equipment and compliance.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 text-center reveal reveal-scale reveal-d1">
+          <div class="w-12 h-12 rounded-xl bg-azm-blue/10 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-azm-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-azm-dark text-sm mb-2">Public OSH Training</h3>
+          <p class="text-gray-500 text-xs leading-relaxed">Public Occupational Safety and Health training programs open to individuals and organizations.</p>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 text-center reveal reveal-scale reveal-d2">
+          <div class="w-12 h-12 rounded-xl bg-azm-blue/10 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-azm-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-azm-dark text-sm mb-2">In-House Training</h3>
+          <p class="text-gray-500 text-xs leading-relaxed">Customized in-house OSH training sessions tailored to your organization's specific needs and requirements.</p>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 text-center reveal reveal-scale reveal-d3">
+          <div class="w-12 h-12 rounded-xl bg-azm-blue/10 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-azm-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-azm-dark text-sm mb-2">Industry Consultancy</h3>
+          <p class="text-gray-500 text-xs leading-relaxed">Expert consultancy services for various industries covering safety compliance, audits, and best practices.</p>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 text-center reveal reveal-scale reveal-d4">
+          <div class="w-12 h-12 rounded-xl bg-azm-blue/10 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-azm-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-azm-dark text-sm mb-2">Safety &amp; Compliance Advisory</h3>
+          <p class="text-gray-500 text-xs leading-relaxed">Comprehensive safety management advisory to help organizations meet regulatory requirements and standards.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA SECTION
+       ============================================ -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="font-heading font-extrabold text-2xl sm:text-3xl text-azm-dark leading-tight mb-4 reveal">
+        Invest in Your Team's Safety &amp; Skills
+      </h2>
+      <p class="text-gray-500 text-sm leading-relaxed mb-8 reveal reveal-d1">
+        Whether you need certified OSH training, a safety audit, or ongoing consultancy, our expert team is ready to support your business goals.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 reveal reveal-d2">
+        <a href="../contact" class="inline-block bg-azm-red hover:bg-azm-red-dark text-white font-semibold text-sm uppercase tracking-wide px-8 py-3.5 rounded transition-colors duration-200">
+          Get In Touch
+        </a>
+        <a href="https://wa.me/60195742239" target="_blank" class="inline-flex items-center gap-2 border-2 border-azm-dark/20 hover:border-azm-dark text-azm-dark font-semibold text-sm uppercase tracking-wide px-8 py-3.5 rounded transition-colors duration-200 hover:bg-azm-dark/5">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="bg-azm-dark pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-10 pb-8 border-b border-white/10">
+        <div>
+          <img src="../assets/logos/azm-group.png" alt="AZM Group" class="h-12 w-auto object-contain mb-2">
+          <p class="text-gray-500 text-xs">One-Stop Construction &amp; Industrial Business Centre</p>
+        </div>
+        <a href="https://wa.me/60193852239" class="inline-flex items-center gap-2 px-5 py-2.5 bg-azm-red hover:bg-azm-red-dark text-white text-xs font-semibold rounded-lg transition">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          Contact Us
+        </a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="../about" class="text-gray-400 text-xs hover:text-azm-red transition">About Us</a></li>
+            <li><a href="../#subsidiaries" class="text-gray-400 text-xs hover:text-azm-red transition">Subsidiaries</a></li>
+            <li><a href="../#services" class="text-gray-400 text-xs hover:text-azm-red transition">Services</a></li>
+            <li><a href="../#clients" class="text-gray-400 text-xs hover:text-azm-red transition">Clients</a></li>
+            <li><a href="../contact" class="text-gray-400 text-xs hover:text-azm-red transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">Companies</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Global Solution</a></li>
+            <li><a href="#" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Training &amp; Consultancy</a></li>
+            <li><a href="#" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Bina Gemilang</a></li>
+            <li><a href="#" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Concrete Industries</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">Divisions</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Scaffolding &amp; Machinery</a></li>
+            <li><a href="#" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Safetyware</a></li>
+            <li><a href="#" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Signboard &amp; Fabrication</a></li>
+            <li><a href="#" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Procare &amp; Pest Control</a></li>
+            <li><a href="#" class="text-gray-400 text-xs hover:text-azm-red transition">AZM Rovers FC</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">WhatsApp</h4>
+          <ul class="space-y-2 text-xs">
+            <li class="text-gray-500">Scaffolding: <span class="text-gray-400">019-385 2239</span></li>
+            <li class="text-gray-500">Project: <span class="text-gray-400">017-995 2239</span></li>
+            <li class="text-gray-500">Machinery: <span class="text-gray-400">012-419 2239</span></li>
+            <li class="text-gray-500">Safety: <span class="text-gray-400">013-276 2239</span></li>
+            <li class="text-gray-500">Training: <span class="text-gray-400">019-574 2239</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">Head Office</h4>
+          <ul class="space-y-2 text-gray-400 text-xs">
+            <li>Kelantan, Malaysia</li>
+            <li>info@azmgroup.com.my</li>
+            <li>Mon – Fri: 9AM – 6PM</li>
+          </ul>
+          <div class="flex gap-2 mt-4">
+            <a href="https://www.facebook.com/azmscaffolding" target="_blank" class="w-7 h-7 rounded bg-white/10 flex items-center justify-center hover:bg-azm-red/30 transition"><svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/" target="_blank" class="w-7 h-7 rounded bg-white/10 flex items-center justify-center hover:bg-azm-red/30 transition"><svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p class="text-gray-500 text-xs">&copy; 2026 AZM Group. All rights reserved.</p>
+        <p class="text-gray-500 text-xs italic">"Building Value. Delivering Trust. Empowering Growth."</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/60123456789" target="_blank" rel="noopener noreferrer"
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#1ebe57] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110"
+     aria-label="Chat on WhatsApp">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
